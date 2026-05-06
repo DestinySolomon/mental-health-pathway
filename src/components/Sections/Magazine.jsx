@@ -1,4 +1,5 @@
-import ScrollReveal from '../UI/ScrollReveal';
+import ScrollReveal from "../UI/ScrollReveal";
+import magazineCover from "../../assets/magazine-cover.png";
 
 const Magazine = () => {
   return (
@@ -7,10 +8,13 @@ const Magazine = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <ScrollReveal>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Quest for Mental Health Magazine</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Quest for Mental Health Magazine
+              </h2>
               <p className="text-dark mb-4">
-                An 18‑page publication designed to raise awareness, share experiences, and ignite conversations.
-                Available in at least 7 major Nigerian languages to reach a diverse audience.
+                An 18‑page publication designed to raise awareness, share
+                experiences, and ignite conversations. Available in at least 7
+                major Nigerian languages to reach a diverse audience.
               </p>
               <ul className="space-y-2 text-dark">
                 <li>✓ Stories of hope and recovery</li>
@@ -25,11 +29,13 @@ const Magazine = () => {
           <ScrollReveal delay={0.2}>
             <div className="bg-white p-4 rounded-lg shadow-xl">
               <img
-                src="/magazine-cover-placeholder.jpg"
-                alt="Magazine cover"
+                src={magazineCover}
+                alt="Quest for Mental Health Magazine cover"
                 className="w-full rounded-md"
               />
-              <p className="text-center text-muted text-sm mt-2">Sample cover – Mockup</p>
+              <p className="text-center text-muted text-sm mt-2">
+                Quest for Mental Health Magazine
+              </p>
             </div>
           </ScrollReveal>
         </div>

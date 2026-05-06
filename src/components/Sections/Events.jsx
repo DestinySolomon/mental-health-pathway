@@ -3,9 +3,9 @@ import { Calendar, MapPin } from 'lucide-react';
 
 const Events = () => {
   const events = [
-    { name: 'World Mental Health Day', date: 'October 10, 2025', location: 'Uyo & Virtual' },
-    { name: 'World Suicide Prevention Day', date: 'September 10, 2025', location: 'Online Webinar' },
-    { name: 'Mental Health Live 2025', date: 'December 5, 2025', location: 'Ibom Hall, Uyo' },
+    { name: 'World Mental Health Day', date: 'October 10, 2026', location: 'Uyo & Virtual' },
+    { name: 'World Suicide Prevention Day', date: 'September 10, 2026', location: 'Online Webinar' },
+    { name: 'Mental Health Live 2025', date: 'December 5, 2026', location: 'Ibom Hall, Uyo' },
     { name: 'School Sensitization Tour', date: 'Ongoing – Book a Session', location: 'Various Schools' },
   ];
 

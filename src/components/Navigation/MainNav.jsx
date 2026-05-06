@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoImg from "../../assets/logo.jpg";
 
 const MainNav = ({ isSubNavVisible, subNavHeight = 0 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +12,8 @@ const MainNav = ({ isSubNavVisible, subNavHeight = 0 }) => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo + text */}
         <div className="flex items-center gap-3">
-          {/* Placeholder logo image – replace /logo.png with your actual file */}
           <img
-            src="/logo.png"
+            src={logoImg}
             alt="Mental Health Pathway"
             className="h-10 w-auto"
           />
