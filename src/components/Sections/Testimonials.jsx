@@ -1,25 +1,28 @@
-import ScrollReveal from '../UI/ScrollReveal';
-import { Quote } from 'lucide-react';
+import ScrollReveal from "../UI/ScrollReveal";
+import { Quote } from "lucide-react";
+import ekaetteAvatar from "../../assets/ekaette.jpg";
+import michaelAvatar from "../../assets/michael.jpg";
+import fatimaAvatar from "../../assets/fatima.jpg";
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Ekaette U.',
-      role: 'Teacher, Uyo',
-      text: 'The sensitization training at our school opened up conversations I never thought possible. Students are now more open about their struggles.',
-      avatar: '/avatar1.jpg',
+      name: "Ekaette U.",
+      role: "Teacher, Uyo",
+      text: "The sensitization training at our school opened up conversations I never thought possible. Students are now more open about their struggles.",
+      avatar: ekaetteAvatar,
     },
     {
-      name: 'Michael O.',
-      role: 'Support Group Member',
-      text: 'The monthly meetings gave me a safe space to share without judgment. I look forward to every session.',
-      avatar: '/avatar2.jpg',
+      name: "Michael O.",
+      role: "Support Group Member",
+      text: "The monthly meetings gave me a safe space to share without judgment. I look forward to every session.",
+      avatar: michaelAvatar,
     },
     {
-      name: 'Fatima B.',
-      role: 'Parent',
-      text: 'My daughter joined the Mental Health Club at her school. She now has tools to cope with anxiety. Thank you.',
-      avatar: '/avatar3.jpg',
+      name: "Fatima B.",
+      role: "Parent",
+      text: "My daughter joined the Mental Health Club at her school. She now has tools to cope with anxiety. Thank you.",
+      avatar: fatimaAvatar,
     },
   ];
 
@@ -27,7 +30,9 @@ const Testimonials = () => {
     <section className="py-20 px-6 md:px-12 bg-secondary/20">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Stories of Impact</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+            Stories of Impact
+          </h2>
         </ScrollReveal>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, idx) => (

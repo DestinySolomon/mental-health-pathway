@@ -1,5 +1,5 @@
 const Footer = () => {
-  const phoneNumber = "+2348145925327";
+  const phoneNumber = "+2347084684889";
 
   return (
     <footer className="bg-dark text-white py-12 px-6 md:px-12">

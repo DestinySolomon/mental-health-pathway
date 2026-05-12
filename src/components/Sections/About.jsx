@@ -105,14 +105,14 @@ const About = () => {
                 Meet Our Founder
               </h3>
               <p className="text-dark text-lg font-semibold mb-3">
-                [Founder Name]
+                Ubong Friday Eyenobong
               </p>
               <p className="text-muted mb-4">
-                [Founder bio – e.g., "A clinical psychologist with over 15 years
-                of experience in community mental health, [Name] founded Mental
+               A clinical psychologist with over 15 years
+                of experience in community mental health, Ubong Friday Eyenobong founded Mental
                 Health Pathway to bridge the gap between awareness and
-                actionable support in Nigeria. Their vision has touched
-                thousands of lives across Akwa Ibom and beyond."]
+                actionable support in Nigeria. His vision has touched
+                thousands of lives across Akwa Ibom and beyond.
               </p>
               <div className="flex space-x-4 text-primary">
                 <a href="#" className="hover:text-tertiary">
