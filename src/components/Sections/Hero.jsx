@@ -2,6 +2,7 @@ import ScrollReveal from "../UI/ScrollReveal";
 import TypedHeading from "../UI/TypedHeading";
 import heroVideo from "../../assets/Mental-Health-Pathway.mp4";
 import { useEffect, useRef, useState } from "react";
+import { Heart } from "lucide-react";
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -60,9 +61,15 @@ const Hero = () => {
             empathetic conversations, and delivering insights for individuals
             navigating the multifaceted landscape of mental health in Nigeria.
           </p>
-          <button className="bg-tertiary hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-full transition transform hover:scale-105">
-            Join Our Next Support Group
-          </button>
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <button className="bg-tertiary hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-full transition transform hover:scale-105">
+              Join Our Next Support Group
+            </button>
+            <button className="inline-flex items-center justify-center gap-2 border border-white/50 bg-white/10 text-white font-semibold py-3 px-8 rounded-full transition hover:bg-white/20 transform hover:scale-105">
+              <Heart className="w-4 h-4" />
+              Donate
+            </button>
+          </div>
         </ScrollReveal>
       </div>
     </section>
