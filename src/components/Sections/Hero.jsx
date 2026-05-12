@@ -1,24 +1,52 @@
 import ScrollReveal from "../UI/ScrollReveal";
 import TypedHeading from "../UI/TypedHeading";
 import heroVideo from "../../assets/Mental-Health-Pathway.mp4";
+import { useEffect, useRef, useState } from "react";
 
 const Hero = () => {
+  const videoRef = useRef(null);
+  const [videoError, setVideoError] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      // Attempt to play the video
+      const playVideo = async () => {
+        try {
+          await video.play();
+        } catch (error) {
+          console.log("Video autoplay failed:", error);
+          // Video will remain muted and attempt to play on user interaction
+        }
+      };
+
+      playVideo();
+    }
+  }, []);
+
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center text-white px-4 pt-36 overflow-hidden"
     >
-      {/* Background video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source src={heroVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* Background video with fallback */}
+      {!videoError ? (
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          onError={() => setVideoError(true)}
+        >
+          <source src={heroVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        // Fallback background if video fails
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary to-secondary z-0"></div>
+      )}
 
       {/* Dark overlay for readability */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
